@@ -11,9 +11,7 @@ window.addEventListener('load', () => {
 // =====================================================
 const roles = [
     'Aspiring Software Engineer',
-    'Java Developer',
-    'Full-Stack Web Developer',
-    'Laravel & Spring Boot Enthusiast'
+    'Java Developer'
 ];
 
 const typedEl = document.getElementById('typedRole');
