@@ -463,22 +463,42 @@ section{ padding: 90px 0; }
 .info-row .val{ color: var(--text); }
 .info-row .comma{ color: var(--text-muted); }
 
-.skills-row{ display: flex; flex-wrap: wrap; gap: 10px; }
-.skill-pill{
-    font-size: .8rem;
-    font-weight: 500;
-    background: var(--bg-soft);
-    border: 1px solid var(--border);
+/* =====================================================
+   TECH STACK (grouped badges)
+===================================================== */
+.tech-stack{ margin-top: 8px; }
+.tech-group{ margin-bottom: 22px; }
+.tech-group:last-child{ margin-bottom: 0; }
+.tech-label{
+    font-family: var(--display);
+    font-size: .78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .06em;
     color: var(--accent-deep);
-    padding: 7px 15px;
+    margin-bottom: 12px;
+}
+.tech-badges{ display: flex; flex-wrap: wrap; gap: 10px; }
+.badge{
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: .82rem;
+    font-weight: 500;
+    padding: 8px 16px;
     border-radius: 20px;
-    transition: transform .2s var(--ease), background .2s, color .2s;
+    border: 1px solid var(--border);
+    transition: transform .2s var(--ease), box-shadow .2s var(--ease);
 }
-.skill-pill:hover{
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
-    color: #fff;
+.badge:hover{
     transform: translateY(-3px);
+    box-shadow: 0 10px 20px -12px rgba(74,59,69,.35);
 }
+.badge i{ font-size: .95rem; }
+.badge-rose{     background: rgba(231,168,196,.18); color: #A85C7D; }
+.badge-lavender{ background: rgba(195,180,227,.20); color: #6B5CA5; }
+.badge-peach{    background: rgba(246,203,160,.22); color: #B87830; }
+.badge-mint{     background: rgba(175,220,203,.22); color: #3F8A6D; }
 
 /* =====================================================
    PROJECTS
